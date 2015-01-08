@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :users
-
+  resources :get_in_touch, only: [:new, :create]
   root to: 'static_pages#home'
 
   # Example of regular route:

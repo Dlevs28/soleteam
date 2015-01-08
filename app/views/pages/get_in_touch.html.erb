@@ -1,0 +1,9 @@
+<h3>Get In Touch</h3>
+	<div class="form">
+		<%= simple_form_for :contact, url: get_in_touch_path do |form| %>
+		<%= form.input :name, autofocus: true %>
+		<%= form.input :email %>
+		<%= form.input :content, as: :text %>
+		<%= form.button :submit, 'Submit', class: 'submit' %>
+    </div>
+<% end %> 
