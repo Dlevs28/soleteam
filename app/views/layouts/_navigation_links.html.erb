@@ -5,4 +5,7 @@
 <% else %>
   <li><%= link_to 'Sign in', new_user_session_path %></li>
   <li><%= link_to 'Sign up', new_user_registration_path %></li>
-<% end %>
+  <li><%= link_to 'Get In Touch', page_path('get_help') %></li>
+  <li><%= link_to 'Terms Of Service', page_path('terms_of_service') %></li>
+  <li><%= link_to 'Privacy Policy', page_path('privacy_policy') %></li>
+  <% end %>

@@ -20,7 +20,7 @@ gem 'google_drive', '~> 1.0.0'
 gem 'high_voltage', '~> 2.2.1'
 gem 'simple_form'
 gem 'devise', '~> 3.4.1'
-
+gem 'devise-i18n', '~> 0.11.3'
 
 group :development do
   gem 'pg', '~> 0.18.1'
