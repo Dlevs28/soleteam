@@ -19,9 +19,13 @@ gem 'gibbon', '~> 1.1.4'
 gem 'google_drive', '~> 1.0.0' 
 gem 'high_voltage', '~> 2.2.1'
 gem 'simple_form'
+gem 'devise', '~> 3.4.1'
 
 
 group :development do
+  gem 'pg', '~> 0.18.1'
+  gem 'rails_12factor', '~> 0.0.3'
+  gem 'thin', '~> 1.6.3' 
   gem 'better_errors', '~> 1.1.0'
   gem 'quiet_assets', '~> 1.1.0' 
   gem 'rails_layout', '~> 1.0.24'
