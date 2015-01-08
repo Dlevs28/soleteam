@@ -18,7 +18,7 @@ gem 'foundation-rails', '~> 5.5.0.0'
 gem 'gibbon', '~> 1.1.4' 
 gem 'google_drive', '~> 1.0.0' 
 gem 'high_voltage', '~> 2.2.1'
-gem 'simple_form', '~> 3.1.0'
+gem 'simple_form'
 
 
 group :development do
