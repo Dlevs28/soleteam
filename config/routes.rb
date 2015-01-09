@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :get_in_touch, only: [:new, :create]
-  root to: 'static_pages#home'
+  resources :contacts, only: [:new, :create]
+  get 'semesters/semester_one'
+  get 'semesters/semester_two'
+  get 'semesters/semester_three'
+  get 'semesters/semester_four'
+  root to: 'visitors#new'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

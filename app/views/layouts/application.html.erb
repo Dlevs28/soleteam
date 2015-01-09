@@ -2,7 +2,7 @@
 <html>
   <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title><%= content_for?(:title) ? yield(:title) : "Soleteam" %></title>
+      <title><%= content_for?(:title) ? yield(:title) : "Soleteam Wellness Company" %></title>
       <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Soleteam" %>">
       <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
       <%# Modernizr is required for Zurb Foundation %>
@@ -14,10 +14,10 @@
   <body>
       <header>
           <%= render 'layouts/navigation' %>
+          <%= render 'layouts/messages' %>
      </header>
       <main role="main" class="row">
           <div class="small-12 columns">
-          <%= render 'layouts/messages' %>
             <%= yield %>
           </div>
       </main>

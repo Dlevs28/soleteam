@@ -1,0 +1,14 @@
+<% if user_signed_in? %>
+<h1> Welcome To Soleteam </h1>
+<ul>
+	<li><%= link_to 'Semester 1', semesters_semester_one_path %></li>
+	<li><%= link_to 'Semester 2', semesters_semester_two_path %></li>
+	<li><%= link_to 'Semester 3', semesters_semester_three_path %></li>
+	<li><%= link_to 'Semester 4', semesters_semester_four_path %></li>
+</ul>
+
+
+<% else %>
+<h1> Soleteam : A new kind of wellness company </h1>
+
+  <% end %>
