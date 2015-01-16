@@ -1,10 +1,15 @@
 <% if user_signed_in? %>
-  <li><%= link_to 'Edit account', edit_user_registration_path %></li>
+ 
+  <li><%= link_to 'Sole Study', pages_library_path %></li>
+  <li><%= link_to 'Sole Chef', pages_sole_chef_path %></li>
+  <li><%= link_to 'Where Is Soleteam', pages_where_is_soleteam_path %></li>
+  <li><%= link_to 'Sole Tools', pages_quick_tools_path %></li>
+   <li><%= link_to 'Find me a Sole Coach', pages_sole_coach_path %></li>
+   <li><%= link_to 'Edit account', edit_user_registration_path %></li>
+  <li><%= link_to 'Tech Help', pages_tech_help_path %></li>
   <li><%= link_to 'Sign out', destroy_user_session_path, :method=>'delete' %></li>
 <% else %>
-  <li><%= link_to 'Sign in', new_user_session_path %></li>
+  <li><%= link_to 'Members', new_user_session_path %></li>
   <li><%= link_to 'Sign up', new_user_registration_path %></li>
   <li><%= link_to 'Get in touch', new_contact_path %></li>
-  <li><%= link_to 'Terms of service', page_path('terms_of_service') %></li>
-  <li><%= link_to 'Privacy policy', page_path('privacy_policy') %></li>
   <% end %>

@@ -1,0 +1,5 @@
+ <% if user_signed_in? %>
+ <% else %>
+  <li><%= link_to 'Terms of service', page_path('terms_of_service') %></li>
+  <li><%= link_to 'Privacy policy', page_path('privacy_policy') %></li>
+   <% end %>
