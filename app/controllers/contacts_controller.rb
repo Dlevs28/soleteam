@@ -4,6 +4,22 @@ class ContactsController < ApplicationController
 		@contact = Contact.new
 	end
 
+	def employer
+		@contact = Contact.new
+	end
+
+	def affiliate
+		@contact = Contact.new
+	end
+
+	def broker
+		@contact = Contact.new
+	end
+
+	def healthcare_practitioner
+		@contact = Contact.new
+	end
+
 	def create
 		@contact = Contact.new(secure_params)
 		if @contact.valid?

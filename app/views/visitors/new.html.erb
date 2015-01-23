@@ -1,5 +1,5 @@
  <% if user_signed_in? %>
-<h1> Welcome To Soleteam </h1>
+<h1> Welcome To Sole University! </h1>
 <ul>
 	<li><%= link_to 'Semester 1', semesters_semester_one_path %></li>
 	<li><%= link_to 'Semester 2', semesters_semester_two_path %></li>
@@ -9,6 +9,46 @@
 
 
 <% else %>
-<h1> Soleteam : A new kind of wellness company </h1>
 
+<h1> Hi! Welcome to SoleTeam</h1> 
+<h2> A new way to wellness </h2>
+<br><p> Get your Proposal </p>
+
+<br>
+<br>
+<br>
+
+<h1> Better health begins with technology</h1> 
+<h2> Consistent Interactive engagement.
+<br>  Anytime, Anywhere. </h2>
+
+<br>
+<br>
+<br>
+
+<h1> It evolves with support</h1> 
+<h2> Nothing Says support like a 
+<br>  Preferred Network. </h2>
+
+<br>
+<br>
+<br>
+
+<h1> And continues with lifestyle management</h1> 
+<h2> We give you the education and tools to 
+<br>  Keep Going. </h2>
+
+<br>
+<br>
+<br>
+
+<h1> Join the team </h1>
+
+<br>
+<br>
+<br>
+
+<footer>
+	<%= render 'layouts/footer_links' %>
+</footer>
   <% end %>
