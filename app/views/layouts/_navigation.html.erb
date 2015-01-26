@@ -1,6 +1,40 @@
 
 <div class="nav">
 
-  <%= link_to(image_tag('Logo.gif', :alt => 'soleteam logo') %>
-  <%= render 'layouts/navigation_links' %>
+<%# add navigation links to this file %>
+ <% if user_signed_in? %>
+ <div class="signed-in-nav">
+
+<div class="logo">
+ 	<%= link_to(image_tag('Logo.gif', :size => '100x40',:alt => 'soleteam logo'), root_path)%>
+
+ <li><%= link_to 'Library',  pages_library_path %></li>
+ <li><%= link_to 'Sole Chef', pages_sole_chef_path %></li>  
+ <li><%= link_to 'Edit Account', edit_user_registration_path %></li>
+ <li><%= link_to 'Tech Help', new_contact_path %></li>
+ <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
 </div>
+ 
+ <% else %>
+
+<div class="logo">
+ 	<%= link_to(image_tag('Logo.gif', :size => '100x40',:alt => 'soleteam logo'), root_path)%>
+</div>
+
+<div class="dropdown-menu">
+	<li><%= link_to 'Individual', contacts_individual_path %></li>
+	<li><%= link_to 'Employee', contacts_employee_path %></li>
+	<li><%= link_to 'Employer', contacts_employer_path %></li>
+	<li><%= link_to 'Broker', contacts_broker_path %></li>
+	<li><%= link_to 'Healthcare Practioner', contacts_healthcare_practitioner_path %></li>
+	<li><%= link_to 'Affiliate Vendor', contacts_affiliate_path %></li>
+</div>
+
+<div class="basic-nav">
+<li><%= link_to 'Members', user_session_path %></li>
+<li><%= link_to 'Sign Up', new_user_registration_path %></li>
+<li><%= link_to 'Get in touch', new_contact_path %></li>
+</div>
+
+</div>
+<% end %>
