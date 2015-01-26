@@ -1,10 +1,45 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "SoleTeam Wellness Company" %></title>
+  <!DOCTYPE html>
+
+
+
+  
+<!--[if IE 7]> <html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9]> <html class="no-js ie ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+
+<meta charset="utf-8" />
+
+  
+  <meta http-equiv="content-language" content="en">
+
+  <title>SoleTeam Wellness Company</title>
+
+  <meta name="author" content="SoleTeam Wellness Company">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="Hi! Welcome to SoleTeam. A new way to wellness.">
+
+  <link rel="alternate" hreflang="en-us" href="https://www.soleteam.com/" />
+  <link rel="alternate" hreflang="es" href="https://www.soleteam.com/?locale=es" />
+  <link rel="canonical" href="https://www.soleteam.com/" />
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <!--[IEMobile]> <meta name="MobileOptimized" content="width"> <![endif]-->
+  <meta property="og:description" content="SoleTeam- A New Way To Wellness.">
+  <meta property="og:title" content="SoleTeam Wellness Company">
+
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1,
+                                 user-scalable=no">
+
+
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "SoleTeam Wellness Company" %>">
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    
+    <link data-turbolinks-track="true" href="/assets/simple.css?body=1" media="all" rel="stylesheet" />
+
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
@@ -17,4 +52,4 @@
       <%= yield %>
     </main>
   </body>
-</html>
+</html> 

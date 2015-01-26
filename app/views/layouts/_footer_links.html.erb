@@ -1,5 +1,6 @@
  <% if user_signed_in? %>
  <% else %>
+ <div class="footer">
   <li><%= link_to 'Terms of service', page_path('terms_of_service') %></li>
   <li><%= link_to 'Privacy policy', page_path('privacy_policy') %></li>
   <p> 
@@ -13,4 +14,5 @@
 .ig-b-v-24 { background-image: url(//badges.instagram.com/static/images/ig-badge-view-sprite-24@2x.png); background-size: 160px 178px; } }</style>
 <a href="http://instagram.com/soleteaminc?ref=badge" class="ig-b- ig-b-v-24"><img src="//badges.instagram.com/static/images/ig-badge-view-24.png" alt="Instagram" /></a>
 </p>
+</div>
    <% end %>

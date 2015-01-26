@@ -1,10 +1,12 @@
-<h3>Please leave your info.<br>
-	We're here to help! </h3>
+<div class="get_in_touch">
+<h1>Please leave your info</h1>
+<h2>We're here to help! </h2>
 	<%= simple_form_for @contact do |form| %>
 	<%= form.error_notification %>
 	<%= form.input :name, autofocus: true %>
 	<%= form.input :email %>
 	<%= form.input :content, as: :text %>
 	<%= form.button :submit, 'Submit', class: 'submit' %>
+</div>
 <% end %> 
 

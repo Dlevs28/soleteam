@@ -14,7 +14,6 @@ gem 'jbuilder', '~> 2.0'
  gem 'spring', '~> 1.2.0', group: :development
 
 #soleteam
-gem 'foundation-rails', '~> 5.5.0.0' 
 gem 'gibbon', '~> 1.1.4' 
 gem 'google_drive', '~> 1.0.0' 
 gem 'high_voltage', '~> 2.2.1'

@@ -1,31 +1,109 @@
 /*
  * Simple CSS stylesheet for a navigation bar and flash messages.
  */
-main {
-  background-color: #eee;
-  padding-bottom: 80px;
-  width: 100%;
-  }
+
+
+/*******Navigation********/
 header {
 width: 100%;
-position:absolute;
+position:fixed;
 height:60px;
-background-color:white;
-margin: -2px 0 0 2px;
-background-clip: padding-box;
+background-color:#f1f2f2;
+top:0px;
+left:0px;
+right:0px;
+}
+.nav{
+  position: relative;
+  top: 0px;
+  padding: 10px 15px 10px;
+
 }
 
-
-ul.nav li {
+.dropdown-menu li {
   display: inline;
-
-}
-ul.nav li a {
   padding: 10px 15px 10px;
   color: #204056;
   text-decoration: none;
-  text-shadow: 0 1px 0 white;
+  font-weight:normal;
+  float:left;
 }
+
+.basic-nav{
+  display: inline;
+  padding: 10px 15px 10px;
+  color: #204056;
+  text-decoration: none;
+  font-weight:normal;
+  float:right;
+}
+.signed-in-nav{
+  width: 100%;
+  position:fixed;
+  height:60px;
+  background-color:#f1f2f2;
+  top:0px;
+  left:0px;
+  right:0px;
+  
+}
+/**********homepage**********/
+
+
+.website_page{
+  font-family:'Helvetica';
+  margin: 50px 0;
+  color: #204056;
+  font-weight: normal;
+  padding-top: 5px;
+  padding-bottom:5px;
+  line-height:1.5em;
+}
+.soleteam {
+  display:inline;
+  color:#f65a5b;
+}
+
+/**********Sign In Page**********/
+
+
+.sign_in {
+  font-family:'Helvetica';
+  margin: 50px 0;
+  color: #204056;
+  font-weight: normal;
+  padding-top: 5px;
+  padding-bottom:5px;
+  line-height:1.5em;
+}
+
+/**********Sign Up Page**********/
+
+
+.sign_up {
+  font-family:'Helvetica';
+  margin: 50px 0;
+  color: #204056;
+  font-weight: normal;
+  padding-top: 5px;
+  padding-bottom:5px;
+  line-height:1.5em;
+}
+  /**********Get in touch**********/
+
+
+.get_in_touch {
+  font-family:'Helvetica';
+  margin: 50px 0;
+  color: #204056;
+  font-weight: normal;
+  padding-top: 5px;
+  padding-bottom:5px;
+  line-height:1.5em;
+}
+
+/*******Flash Notices********/
+
 .flash_notice, .flash_alert {
   padding: 8px 35px 8px 14px;
   margin-bottom: 20px;
@@ -49,6 +127,10 @@ ul.nav li a {
   color: #b94a48;
 }
 
-h1 {
-  color: #204056;
+/*******Footer********/
+footer{
+  font-size:.75 em;
+  text-align:center;
+  padding-top: 50px;
+  color:#666666;
 }

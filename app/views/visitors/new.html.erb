@@ -1,54 +1,47 @@
+
  <% if user_signed_in? %>
+<div class="welcome_to_sole_university">
 <h1> Welcome To Sole University! </h1>
-<ul>
 	<li><%= link_to 'Semester 1', semesters_semester_one_path %></li>
 	<li><%= link_to 'Semester 2', semesters_semester_two_path %></li>
 	<li><%= link_to 'Semester 3', semesters_semester_three_path %></li>
 	<li><%= link_to 'Semester 4', semesters_semester_four_path %></li>
-</ul>
+</div>
 
 
 <% else %>
+<div class="website_page">
 
-<h1> Hi! Welcome to SoleTeam</h1> 
-<h2> A new way to wellness </h2>
-<br><p> Get your Proposal </p>
+	<div class="website_page_page_one">
+	<h1> Hi! Welcome to <div class="soleteam">SoleTeam </div>
+	</h1> 
+	<h2> A new way to wellness </h2>
+	<br><p> Get your Proposal </p>
+	</div>
 
-<br>
-<br>
-<br>
+	<div class="website_page_page_two">
+	<h1> Better health begins with technology</h1> 
+	<h2> Consistent Interactive engagement.
+	<br>Anytime, Anywhere.</h2>
+	</div>
 
-<h1> Better health begins with technology</h1> 
-<h2> Consistent Interactive engagement.
-<br>  Anytime, Anywhere. </h2>
+	<div class="website_page_page_three">
+	<h1> It evolves with support</h1> 
+	<h2> Nothing Says support like a 
+	<br>  Preferred Network. </h2>
+	</div>
 
-<br>
-<br>
-<br>
+	<div class="website_page_page_four">
+	<h1> And continues with lifestyle management</h1> 
+	<h2> We give you the education and tools to 
+	<br>  Keep Going. </h2>
+	</div>
 
-<h1> It evolves with support</h1> 
-<h2> Nothing Says support like a 
-<br>  Preferred Network. </h2>
-
-<br>
-<br>
-<br>
-
-<h1> And continues with lifestyle management</h1> 
-<h2> We give you the education and tools to 
-<br>  Keep Going. </h2>
-
-<br>
-<br>
-<br>
-
-<h1> Join the team </h1>
-
-<br>
-<br>
-<br>
-
-<footer>
-	<%= render 'layouts/footer_links' %>
-</footer>
+	<div class="website_page_page_five">
+	<h1> Join the team </h1>
+		<footer>
+		<%= render 'layouts/footer_links' %>	
+		</footer>
+	</div>
+</div>
   <% end %>
