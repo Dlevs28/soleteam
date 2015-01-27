@@ -12,12 +12,17 @@ background-color:#f1f2f2;
 top:0px;
 left:0px;
 right:0px;
+
 }
 .nav{
   position: relative;
   top: 0px;
   padding: 10px 15px 10px;
 
+}
+img{
+  float: left;
+  margin: 25px;
 }
 
 .dropdown-menu li {
